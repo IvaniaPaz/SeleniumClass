@@ -23,22 +23,13 @@ public class RecapRadioAndCheck extends CommonMethods {
 		for(WebElement el:allChBoxes) {
 			
 			String text=el.getAttribute("value");
-			System.out.println("Text from a checkbox"+text);
-			
-			el.click();
-			Thread.sleep(1000);
+			if(text.equals("Selenium IDE")) {
+				el.click();
+				break;
+			}
 		}
 	
 		Thread.sleep(2000);
 		driver.quit();
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	}
 }

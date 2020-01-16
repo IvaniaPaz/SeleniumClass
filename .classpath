@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="C:/Users/Ivania Paz/Documents/JarFiles/Selenium/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ivania Paz/Documents/JarFiles/Selenium/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ivania Paz/Documents/JarFiles/Selenium/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ivania Paz/Documents/JarFiles/Commons/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

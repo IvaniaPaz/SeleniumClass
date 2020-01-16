@@ -12,6 +12,8 @@ public class RecapMultipleWindows extends CommonMethods{
 	public static void main(String[] args) throws InterruptedException {
 		
 		setUp("chrome","http://jiravm.centralus.cloudapp.azure.com:8081/window-popup-modals-demo.html");
+		String mainW=driver.getWindowHandle();
+		System.out.println(mainW);
 		driver.findElement(By.linkText("Follow On Instagram")).click();
 		/*1 get windowHandles()
 		 * identify parent and child
@@ -20,7 +22,10 @@ public class RecapMultipleWindows extends CommonMethods{
 		Set<String>allWindows=driver.getWindowHandles();
 		Iterator<String> stringIt=allWindows.iterator();
 		String parent=stringIt.next();
+		System.out.println(parent);
+		System.out.println("----");
 		String child=stringIt.next();
+		System.out.println(child);
 	
 		driver.switchTo().window(child);
 		String childTitle=driver.getTitle();
